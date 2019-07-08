@@ -130,6 +130,10 @@
 	width: 1.74rem;
 	margin-right: .3rem;
 }
+.userlist li a .imgbox img{
+	display: block;
+	width: 100%;
+}
  .userlist li a .name {
 	font-size: .28rem;
 	color: #333;
@@ -144,4 +148,134 @@
 	-webkit-line-clamp: 3; //向显示多少行就给多大值
 	-webkit-box-orient: vertical;
 	padding: 0 !important;
+	margin-top: .2rem;
+}
+
+.introduce-txt{
+	padding: 0.3rem;
+	background: #fff;
+}.introduce-txt img{
+	display: block;
+	width: 100%;
+}.introduce-txt ,.rule{
+	color: #333;
+	font-size: .24rem;
+	line-height: .52rem;
+}
+.introduce-txt p,.rule p{
+	text-indent: 2em;
+	
+}
+.rule{
+	background: #fff;
+	padding: .5rem .3rem;
+}.rule .title{
+	font-size: .28rem;
+	text-align: center;
+}
+.page .pagination {
+	text-align: center;
+}
+
+.page .pagination a {
+	display: inline-block;
+	border: 1px solid #d4d4d4;
+	height: .6rem;
+	width:.6rem;
+	border-radius: 100%;
+	vertical-align: middle;
+	background: no-repeat center center;
+	color: #666;
+	line-height:.58rem;
+	background-size: .14rem auto;
+}
+
+.page .pagination a:hover {
+	background-color: #0c9ec8;
+	color: #fff;
+}
+
+.page .pagination a.prev {
+	background-image: url(../img/arrowleft3.png);
+}
+
+.page .pagination a.next {
+	background-image: url(../img/arrowright3.png);
+}
+
+.page .pagination span {
+	color: #333;
+	margin: 0 .15rem;
+
+}
+.page>.userlist{
+	padding: .3rem;
+}
+.userDetails {
+	background: #fff;
+	padding: .4rem .3rem 0;
+	line-height: .52rem;
+	color: #333;
+}
+
+.userDetails>img {
+	display: block;
+	margin: 0 auto;
+}
+
+.userDetails p {
+	text-indent: 2em;
+}
+
+.userDetails .title {
+	font-size: .26rem;
+	font-weight: bold;
+	margin-top: .4rem;
+}
+.articlepage {
+	color: #999;
+	padding: .3rem;
+}
+
+.articlepage a {
+	color: #999;
+	display: block;
+}
+
+.newslist{
+	/* padding: .3rem; */
+}
+.newslist>.newsbox{
+	background: #f6f6f6;
+}
+.newsdetails {
+	background: #fff;
+	padding: .4rem .3rem;
+}
+
+.newsdetails>.title {
+	text-align: center;
+	font-size:.26rem;
+	color: #333;
+}
+
+.newsdetails>.time {
+	font-size:.22rem;
+	color: #999;
+	margin-top: .25rem;
+	text-align: center;
+}
+
+.newsdetails p {
+	line-height: .24rem;
+	color: #666;
+	text-indent: 2em;
+	line-height: .52rem;
+	margin-top: .3rem;
+}
+
+.newsdetails img {
+	display: block;
+	margin: .5rem auto 0;
+	width:90%;
 }
