@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div class="header">
+			<div class="clearfix"><a href="index.html" class="logo"><img src="img/logo.png"></a>
+				<a href="javascript:;" class="menuBtn"></a>
+				<a href="javascript:;" class="searchBtn"></a></div>
+			<div class="searchbar flex flex-align-center">
+				<input type="text" class="flex-1" placeholder="输入关键字">
+				<input type="submit" value="搜索">
+			</div>
+		</div>
+		<!-- 菜单 -->
+		<div class="menubox">
+			<div class="mask"></div>
+			<div class="menulist">
+				<a href="javascript:;" class="close"><img src="img/close.png"></a>
+				<ul class="list">
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="hassublist">协会介绍</a>
+						<ul class="sublist">
+							<li><a href="">协会介绍</a></li>
+							<li><a href="">协会章程</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:;" class="hassublist">法规行约</a>
+						<ul class="sublist">
+							<li><a href="">协会介绍</a></li>
+							<li><a href="">协会章程</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:;" class="hassublist">会员之家</a>
+						<ul class="sublist">
+							<li><a href="">协会介绍</a></li>
+							<li><a href="">协会章程</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:;" class="hassublist">党团工作</a>
+						<ul class="sublist">
+							<li><a href="">协会介绍</a></li>
+							<li><a href="">协会章程</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:;" class="hassublist">下载园地</a>
+						<ul class="sublist">
+							<li><a href="">协会介绍</a></li>
+							<li><a href="">协会章程</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:;" class="hassublist">在线预约</a>
+						<ul class="sublist">
+							<li><a href="">协会介绍</a></li>
+							<li><a href="">协会章程</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:;" class="hassublist">心理测评</a>
+						<ul class="sublist">
+							<li><a href="">协会介绍</a></li>
+							<li><a href="">协会章程</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<!--间隔 -->
+		<div class="page bgfff">
+			<div class="ordersearch">
+				<div class="title">您可以通过手机验证查看自己的预约记录</div>
+				<div>
+					<div class="flex"><input type="text" placeholder="输入手机号码" class="flex-1" /></div>
+					<div class="flex mt20"><input type="text" placeholder="验证码" class="flex-1" />
+					<a href="javascript:;" class="sendcode">发送验证码</a>
+					</div>
+					<a href="javascript:;" class="orderBtn ">立即预约</a>
+				</div>
+			</div>
+			
+		</div>
+		<!-- footer -->
+		<div class="footer ">
+			<div class="link">
+				<a href="">会员登录</a>
+				<span>|</span>
+				<a href="">咨询师登录</a>
+			</div>
+			<div class="copyright">
+				<p>CopyRight © 2019广州市心理咨询协会 </p>
+				<p>All Rights Reserved. 版权所有 </p>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function() {
+		$('.orderlist').on('click', '.order-item .order-hd', function() {
+			$(this).toggleClass('open');
+			$(this).next('.order-bd').slideToggle();
+		})
+
+	})
+</script>

@@ -116,9 +116,11 @@
 	right: 0;
 	bottom: 0;
 }
-.userlist{
+
+.userlist {
 	padding-bottom: .45rem;
 }
+
 .userlist li a {
 	color: #666;
 	font-size: .24rem;
@@ -126,15 +128,17 @@
 	padding: .2rem;
 }
 
-.userlist li a .imgbox{
+.userlist li a .imgbox {
 	width: 1.74rem;
 	margin-right: .3rem;
 }
-.userlist li a .imgbox img{
+
+.userlist li a .imgbox img {
 	display: block;
 	width: 100%;
 }
- .userlist li a .name {
+
+.userlist li a .name {
 	font-size: .28rem;
 	color: #333;
 	padding: 0 !important;
@@ -151,28 +155,39 @@
 	margin-top: .2rem;
 }
 
-.introduce-txt{
+.introduce-txt {
 	padding: 0.3rem;
 	background: #fff;
-}.introduce-txt img{
+}
+
+.introduce-txt img {
 	display: block;
 	width: 100%;
-}.introduce-txt ,.rule{
+}
+
+.introduce-txt,
+.rule {
 	color: #333;
 	font-size: .24rem;
 	line-height: .52rem;
 }
-.introduce-txt p,.rule p{
+
+.introduce-txt p,
+.rule p {
 	text-indent: 2em;
-	
+
 }
-.rule{
+
+.rule {
 	background: #fff;
 	padding: .5rem .3rem;
-}.rule .title{
+}
+
+.rule .title {
 	font-size: .28rem;
 	text-align: center;
 }
+
 .page .pagination {
 	text-align: center;
 }
@@ -181,12 +196,12 @@
 	display: inline-block;
 	border: 1px solid #d4d4d4;
 	height: .6rem;
-	width:.6rem;
+	width: .6rem;
 	border-radius: 100%;
 	vertical-align: middle;
 	background: no-repeat center center;
 	color: #666;
-	line-height:.58rem;
+	line-height: .58rem;
 	background-size: .14rem auto;
 }
 
@@ -208,9 +223,11 @@
 	margin: 0 .15rem;
 
 }
-.page>.userlist{
+
+.page>.userlist {
 	padding: .3rem;
 }
+
 .userDetails {
 	background: #fff;
 	padding: .4rem .3rem 0;
@@ -232,6 +249,7 @@
 	font-weight: bold;
 	margin-top: .4rem;
 }
+
 .articlepage {
 	color: #999;
 	padding: .3rem;
@@ -242,12 +260,14 @@
 	display: block;
 }
 
-.newslist{
+.newslist {
 	/* padding: .3rem; */
 }
-.newslist>.newsbox{
+
+.newslist>.newsbox {
 	background: #f6f6f6;
 }
+
 .newsdetails {
 	background: #fff;
 	padding: .4rem .3rem;
@@ -255,12 +275,12 @@
 
 .newsdetails>.title {
 	text-align: center;
-	font-size:.26rem;
+	font-size: .26rem;
 	color: #333;
 }
 
 .newsdetails>.time {
-	font-size:.22rem;
+	font-size: .22rem;
 	color: #999;
 	margin-top: .25rem;
 	text-align: center;
@@ -277,5 +297,126 @@
 .newsdetails img {
 	display: block;
 	margin: .5rem auto 0;
-	width:90%;
+	width: 90%;
+}
+
+.activelist .modbox-bd {
+	border-bottom: 1px dashed #e1e1e1;
+	padding-top: .4rem;
+}
+
+.activelist .modbox-bd .time {
+	padding-bottom: .4rem;
+}
+
+/* 预约 */
+.orderlist .title {
+	line-height: .8rem;
+	color: #333;
+	font-size: .28rem;
+	padding: 0 .3rem;
+	border-bottom: 1px solid #ddd;
+}
+
+.orderlist .title>span:first-child,
+.orderlist .order-item .order-hd>span:first-child {
+	width: 1.8rem;
+}
+
+.orderlist .title>span:last-child,
+.orderlist .order-item .order-hd>span:last-child {
+	width: 1.7rem;
+	margin-left: .2rem;
+	/* text-align: right; */
+}
+
+.orderlist .order-item .order-hd {
+	font-size: .26rem;
+	color: #333;
+	line-height: .8rem;
+	padding: 0 .3rem;
+	border-bottom: 1px solid #ddd;
+}
+
+.orderlist .order-item .order-bd {
+	font-size: .24rem;
+	color: #666;
+	padding: .3rem;
+	background: #f6f6f6;
+	display: none;
+}
+
+.orderlist .order-item .order-bd p+p {
+	margin-top: .25rem;
+}
+
+.orderlist .order-item .order-hd .phone,
+.orderlist .title .flex-1 {
+	text-align: center;
+}
+
+.order-item .order-hd>span.state {
+	position: relative;
+}
+
+.order-item .order-hd>span.state:after {
+	content: '';
+	height: .2rem;
+	width: .2rem;
+	display: block;
+	border: 1px solid transparent;
+	border-top-color: #adadad;
+	border-right-color: #adadad;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: rotate(45deg);
+	transition: all .3s;
+	transform-origin:80% 20%;
+	margin-top: -.05rem;
+}
+.order-item .order-hd.open>span.state:after{
+	transform: rotate(130deg);
+}
+.ordersearch{
+	padding:.75rem .3rem;
+	font-size: .24rem;
+}
+ .ordersearch .title{
+	 text-align: center;
+	 color: #333;
+	 font-size: .28rem;
+	 font-weight: bold;
+	 margin-bottom: .5rem;
+ }
+  .ordersearch input{
+	  border: none;
+	  border-bottom: 1px solid #dedede;
+	  line-height: .66rem;
+	  }
+ .ordersearch .sendcode{
+	color: #fff;
+	border-radius: .1rem;
+	background: #d91111;
+	width: 1.7rem;
+	line-height:.66rem ;
+	text-align: center;
+	display: block;
+	margin-left: .15rem;
+}
+.ordersearch .orderBtn{
+	display: block;
+	color: #fff;
+	background: #0c9ec8;
+	border-radius: .1rem;
+	line-height: .56rem;
+	text-align: center;
+	margin-top: .8rem;
+}
+.input-group label{
+	color: #333;
+	font-size: .26rem;
+}
+.input-group input[type=text]{
+	border: 1px solid #dedede;
 }
