@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="js/need/Mdate.css" />
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 	</head>
@@ -89,15 +90,80 @@
 					<label class="title">姓名</label>
 					<input type="text" />
 				</div>
-				<div class="input-txt">
-					<label>性别</label>
-					<div>
-						<input type="radio" name="sex"/>
-						<input type="radio" name="sex"/>  
+				<div class="input-txt mt20">
+					<label class="title">性别</label>
+					<div class="mt10">
+						<label class="radboxlabel"><span class="radiobox">
+								<input type="radio" name="member" id="" value="" checked="checked">
+								<span class="icon"></span>
+							</span>
+							<span>男</span></label>
+						<label class="radboxlabel"><span class="radiobox">
+								<input type="radio" name="member" id="" value="">
+								<span class="icon"></span>
+							</span>
+							<span>女</span></label>
 					</div>
 				</div>
+				<div class="input-txt mt20">
+					<label class="title timetitle">选择日期</label>
+					<input type="text" id="selectdate" />
+				</div>
+				<div class="input-txt mt20">
+					<label class="title">起始时间</label>
+					<select>
+						<option value="">12</option>
+					</select>
+				</div>
+				<div class="input-txt mt20">
+					<label class="title">时长</label>
+					<div class="mt10">
+						<label class="radboxlabel"><span class="radiobox">
+								<input type="radio" name="hour" id="" value="" checked="checked">
+								<span class="icon"></span>
+							</span>
+							<span>1小时</span></label>
+						<label class="radboxlabel"><span class="radiobox">
+								<input type="radio" name="hour" id="" value="">
+								<span class="icon"></span>
+							</span>
+							<span>2小时</span></label>
+					</div>
+				</div>
+				<div class="input-txt mt20">
+					<label class="title">预约类型</label>
+					<div class="mt10">
+						<label class="radboxlabel" style="width: 1.8rem;"><span class="radiobox">
+								<input type="radio" name="hour" id="" value="" checked="checked">
+								<span class="icon"></span>
+							</span>
+							<span>线上咨询</span></label>
+						<label class="radboxlabel" style="width: 1.8rem;"><span class="radiobox">
+								<input type="radio" name="hour" id="" value="">
+								<span class="icon"></span>
+							</span>
+							<span>线下咨询</span></label>
+					</div>
+				</div>
+				<div class="input-txt mt20">
+					<label class="title ">
+						<div class="flex flex-pack-justify"><span>手机号码</span> <span class="sendCode">发送验证码</span></div>
+					</label>
+					<input type="text"  />
+				</div>
+				<div class="input-txt mt20">
+					<label class="title">验证码</label>
+					<input type="text"  />
+				</div>
+				<div class="input-txt mt20">
+					<label class="title">您想要咨询的问题</label>
+					<textarea rows="" cols="">
+						
+					</textarea>
+				</div>
+				<a href="" class="saveBtn mt30">立即预约</a>
 			</div>
-			
+
 		</div>
 		<!-- footer -->
 		<div class="footer ">
@@ -115,12 +181,11 @@
 </html>
 <script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/iScroll.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/Mdate.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-	$(function() {
-		$('.orderlist').on('click', '.order-item .order-hd', function() {
-			$(this).toggleClass('open');
-			$(this).next('.order-bd').slideToggle();
-		})
-
-	})
+	new Mdate("selectdate", {
+		beginYear: new Date().getFullYear(),
+		format: "-"
+	});
 </script>

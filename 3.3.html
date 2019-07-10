@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="js/need/Mdate.css" />
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 	</head>
@@ -84,22 +85,54 @@
 		</div>
 		<!--间隔 -->
 		<div class="page bgfff">
-			<div class="memberdetails ">
-				<div class="flex flex-align-center">
-					<div class="imgbox">
-						<img src="img/img2.jpg">
-					</div>
-					<div class="flex-1">
-						<div class="title">李启泰
-							<span class="ml20">心理咨询师</span>
-						</div>
-						<span>职业资格证号：2563969522535</span>
-						<div class="tip mt25">擅长方向：擅长青少年问题咨询、亲子关系、亲密关系等咨询和员工EAP服务</div>
+			<div class="input-group">
+				<div class="input-txt">
+					<label class="title">姓名</label>
+					<input type="text" />
+				</div>
+				<div class="input-txt mt20">
+					<label class="title">是否心理协会会员</label>
+					<div class="mt10">
+						<label class="radboxlabel"><span class="radiobox">
+								<input type="radio" name="member" id="" value="" checked="checked">
+								<span class="icon"></span>
+							</span>
+							<span>男</span></label>
+						<label class="radboxlabel"><span class="radiobox">
+								<input type="radio" name="member" id="" value="">
+								<span class="icon"></span>
+							</span>
+							<span>女</span></label>
 					</div>
 				</div>
-				<p class="mt20">李教授医学本科毕业后赴中山大学、北京大学、新加坡国立大学深造，为知名心理咨询专家。20年多来经常深入一线，为处理和解决企事业、学校、社区的各类危机事件做了大量工作，得到了业内和社会的普遍认可和肯定。近年来，接受特邀到各政府机关、政法系统、企业单位等主持和讲授相关心理学专题讲座数百场次。中央电视台、广东电视台、广州电视台、羊城晚报、广州日报等均有相关报道。</p>
-			<a href="" class="saveBtn mt30">立即预约</a>
+				<div class="input-txt mt20">
+					<label class="title">单位名称</label>
+					<input type="text" />
+				</div>
+				<div class="input-txt mt20">
+					<label class="title">邮箱</label>
+					<input type="text" />
+				</div>
+				
+				<div class="input-txt mt20">
+					<label class="title ">
+						<div class="flex flex-pack-justify"><span>手机号码</span> <span class="sendCode">发送验证码</span></div>
+					</label>
+					<input type="text"  />
+				</div>
+				<div class="input-txt mt20">
+					<label class="title">验证码</label>
+					<input type="text"  />
+				</div>
+				<div class="input-txt mt20">
+					<label class="title">您想要咨询的问题</label>
+					<textarea rows="" cols="">
+						
+					</textarea>
+				</div>
+				<a href="" class="saveBtn mt30">立即报名</a>
 			</div>
+
 		</div>
 		<!-- footer -->
 		<div class="footer ">
@@ -117,12 +150,11 @@
 </html>
 <script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/iScroll.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/Mdate.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-	$(function() {
-		$('.orderlist').on('click', '.order-item .order-hd', function() {
-			$(this).toggleClass('open');
-			$(this).next('.order-bd').slideToggle();
-		})
-
-	})
+	new Mdate("selectdate", {
+		beginYear: new Date().getFullYear(),
+		format: "-"
+	});
 </script>

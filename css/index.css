@@ -434,15 +434,6 @@
 	margin-top: .8rem;
 }
 
-.input-group label {
-	color: #333;
-	font-size: .26rem;
-}
-
-.input-group input[type=text] {
-	border: 1px solid #dedede;
-}
-
 .memberdetails {
 	padding: .4rem .3rem;
 }
@@ -753,4 +744,14 @@
 .filter-ft a.confirmBtn {
 	background: #2d92ee;
 	color: #fff;
+}
+.joinBtn{
+	position: absolute;
+	bottom: 2rem;
+	left: 0;
+	right: 0;
+	background: #0790b7;
+	color: #fff;
+	line-height: .75rem;
+	text-align: center;
 }
