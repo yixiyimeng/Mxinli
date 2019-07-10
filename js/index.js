@@ -1,3 +1,4 @@
+$('.searchbar').css('opacity',1).hide();
 $('.header .menuBtn').click(function() {
 	$('.menubox').show().addClass('active');
 })

@@ -502,9 +502,14 @@ input {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
-
+.mt10 {
+	margin-top: .1rem;
+}
 .mt20 {
 	margin-top: .2rem;
+}
+.ml20 {
+	margin-left: .2rem;
 }
 
 .mt25 {
@@ -514,7 +519,9 @@ input {
 .mt30 {
 	margin-top: .3rem;
 }
-
+.mb30{
+	margin-bottom: .3rem;
+}
 .mt40 {
 	margin-top: .4rem;
 }
@@ -597,7 +604,8 @@ html {
 	left: 0;
 	right: 0;
 	padding: 0 .3rem;
-	display: none;
+	opacity: 0;
+	/* display: none; */
 }
 
 .header .searchbar:before {

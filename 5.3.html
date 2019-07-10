@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -84,20 +84,70 @@
 		</div>
 		<!--间隔 -->
 		<div class="page bgfff">
-			<div class="input-group">
-				<div class="input-txt">
-					<label class="title">姓名</label>
-					<input type="text" />
-				</div>
-				<div class="input-txt">
-					<label>性别</label>
-					<div>
-						<input type="radio" name="sex"/>
-						<input type="radio" name="sex"/>  
-					</div>
-				</div>
-			</div>
+			<div class="memberimglist  clearfix">
+				<ul>
+					<li><a href="">
+							<div class="imgbox"><img src="img/img6.jpg"></div>
+							<p>初级班学员成长坊学习</p>
+						</a>
+					</li>
+					<li><a href="">
+							<div class="imgbox"><img src="img/img6.jpg"></div>
+							<p>初级班学员成长坊学习</p>
+						</a>
+					</li>
+					<li><a href="">
+							<div class="imgbox"><img src="img/img6.jpg"></div>
+							<p>初级班学员成长坊学习</p>
+						</a>
+					</li>
+					<li><a href="">
+							<div class="imgbox"><img src="img/img6.jpg"></div>
+							<p>初级班学员成长坊学习</p>
+						</a>
+					</li>
+					<li><a href="">
+							<div class="imgbox"><img src="img/img6.jpg"></div>
+							<p>初级班学员成长坊学习</p>
+						</a>
+					</li>
+					<li><a href="">
+							<div class="imgbox"><img src="img/img6.jpg"></div>
+							<p>初级班学员成长坊学习</p>
+						</a>
+					</li>
+					<li><a href="">
+							<div class="imgbox"><img src="img/img6.jpg"></div>
+							<p>初级班学员成长坊学习</p>
+						</a>
+					</li>
+					<li><a href="">
+							<div class="imgbox"><img src="img/img6.jpg"></div>
+							<p>初级班学员成长坊学习</p>
+						</a>
+					</li>
+					<li><a href="">
+							<div class="imgbox"><img src="img/img6.jpg"></div>
+							<p>初级班学员成长坊学习</p>
+						</a>
+					</li>
+					<li><a href="">
+							<div class="imgbox"><img src="img/img6.jpg"></div>
+							<p>初级班学员成长坊学习</p>
+						</a>
+					</li>
+				</ul>
 			
+			</div>
+			<!-- 分页 -->
+			<div class="pagination pb40">
+				<a href="javascript:;" class="prev"></a>
+				<a href="javascript:;" class="ml10">1</a>
+				<a href="javascript:;" class="ml5">2</a>
+				<span class="ml10 mr10">…</span>
+				<a href="javascript:;" class="mr10">8</a>
+				<a href="javascript:;" class="next"></a>
+			</div>
 		</div>
 		<!-- footer -->
 		<div class="footer ">
@@ -115,12 +165,3 @@
 </html>
 <script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript">
-	$(function() {
-		$('.orderlist').on('click', '.order-item .order-hd', function() {
-			$(this).toggleClass('open');
-			$(this).next('.order-bd').slideToggle();
-		})
-
-	})
-</script>
