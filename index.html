@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 	</head>
@@ -86,7 +87,17 @@
 		<div class="page">
 			<!-- banner -->
 			<div class="banner">
-				<img src="img/banner.jpg">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><a href=""><img src="img/banner.jpg" alt=""></a></div>
+						<div class="swiper-slide"><a href=""><img src="img/banner.jpg" alt=""></a></div>
+
+						<div class="swiper-slide"><a href=""><img src="img/banner.jpg" alt=""></a></div>
+
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
 			</div>
 			<!-- 分类 -->
 			<div class="cate-section bgfff">
@@ -96,32 +107,32 @@
 							<p>协会介绍</p>
 						</a></li>
 					<li><a href="">
-							<i class="icon1"></i>
-							<p>协会介绍</p>
+							<i class="icon2"></i>
+							<p>新闻动态</p>
 						</a></li>
 					<li><a href="">
-							<i class="icon1"></i>
-							<p>协会介绍</p>
+							<i class="icon3"></i>
+							<p>法规行约</p>
 						</a></li>
 					<li><a href="">
-							<i class="icon1"></i>
-							<p>协会介绍</p>
+							<i class="icon4"></i>
+							<p>会员之家</p>
 						</a></li>
 					<li><a href="">
-							<i class="icon1"></i>
-							<p>协会介绍</p>
+							<i class="icon5"></i>
+							<p>党团工作</p>
 						</a></li>
 					<li><a href="">
-							<i class="icon1"></i>
-							<p>协会介绍</p>
+							<i class="icon6"></i>
+							<p>下载园地</p>
 						</a></li>
 					<li><a href="">
-							<i class="icon1"></i>
-							<p>协会介绍</p>
+							<i class="icon7"></i>
+							<p>在线预约</p>
 						</a></li>
 					<li><a href="">
-							<i class="icon1"></i>
-							<p>协会介绍</p>
+							<i class="icon8"></i>
+							<p>心理测评</p>
 						</a></li>
 
 				</ul>
@@ -224,3 +235,17 @@
 </html>
 <script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+	var swiper = new Swiper('.swiper-container', {
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		loop: true,
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
+		}
+	});
+</script>
