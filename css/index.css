@@ -647,7 +647,7 @@
 
 /* 筛选 */
 .filter-hd {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -666,7 +666,7 @@
 }
 
 .filter-bd {
-	position: fixed;
+	position: absolute;
 	top: 1.05rem;
 	left: 0;
 	width: 100%;
@@ -768,4 +768,15 @@
 	color: #fff;
 	line-height: .75rem;
 	text-align: center;
+}
+.filterbox{
+	position: fixed;
+	top: 0;
+	left: 100%;
+	bottom: 0;
+	width: 100%;
+	z-index: 1;
+	transition: all .3s;
+}.filterbox.active{
+	left: 0;
 }

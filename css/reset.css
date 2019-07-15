@@ -567,7 +567,7 @@ html {
 	left: 0;
 	right: 0;
 	height: 1.06rem;
-	z-index: 9999;
+	z-index: 1;
 }
 
 .header img {
@@ -609,10 +609,17 @@ html {
 	
 }.header.subheader .menuBtn {
 	background-image: url(../img/menu2.png);
-
-
 }
-
+.header.subheader .filterBtn{
+	font-size: .28rem;
+	color: #999;
+	line-height: .66rem;
+	float: left;
+	background: url(../img/filter.png) no-repeat left center;
+	background-size: .28rem auto;
+	padding-left: .4rem;
+	margin-left: .35rem;
+	}
 .header .searchbar {
 	height: .95rem;
 	background: #fff;
@@ -622,6 +629,7 @@ html {
 	right: 0;
 	padding: 0 .3rem;
 	opacity: 0;
+	box-shadow: 0 .05rem .1rem rgba(0,0,0,.1);
 	/* display: none; */
 }
 
