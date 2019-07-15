@@ -256,6 +256,7 @@ body {
 html {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	height: 100%;
+	 outline: none;
 }
 
 h1,
@@ -439,9 +440,11 @@ textarea {
 input {
 	outline: none;
 }
-.c-gren{
+
+.c-gren {
 	color: #40ad34;
 }
+
 .flex {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -502,12 +505,15 @@ input {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
+
 .mt10 {
 	margin-top: .1rem;
 }
+
 .mt20 {
 	margin-top: .2rem;
 }
+
 .ml20 {
 	margin-left: .2rem;
 }
@@ -519,15 +525,19 @@ input {
 .mt30 {
 	margin-top: .3rem;
 }
-.mb30{
+
+.mb30 {
 	margin-bottom: .3rem;
 }
+
 .mt40 {
 	margin-top: .4rem;
 }
-.pb40{
+
+.pb40 {
 	padding-bottom: .4rem;
 }
+
 .mt100 {
 	margin-top: 1rem;
 }
@@ -594,6 +604,13 @@ html {
 	background-image: url(../img/search.png);
 	background-size: .38rem auto;
 	width: .38rem;
+}.header.subheader .searchBtn {
+	background-image: url(../img/search2.png);
+	
+}.header.subheader .menuBtn {
+	background-image: url(../img/menu2.png);
+
+
 }
 
 .header .searchbar {
@@ -635,6 +652,23 @@ html {
 	border: none;
 }
 
+.header.subheader {
+	background: #f6f6f6;
+}
+
+.header.subheader .returnback {
+	float: left;
+	height: 100%;
+	width: .2rem;
+	background: url(../img/arrowleft.png) no-repeat center center;
+	background-size: .2rem auto;
+}
+
+.header.subheader .returnback img {
+
+	display: block;
+}
+
 .menubox {
 	position: fixed;
 	right: 0;
@@ -643,6 +677,7 @@ html {
 	bottom: 0;
 	display: none;
 	transition: all .3s;
+	z-index: 9999;
 }
 
 .menubox .mask {
@@ -729,6 +764,7 @@ html {
 
 .page {
 	padding: 1.06rem 0 0;
+	position: relative;
 
 }
 
@@ -759,8 +795,98 @@ html {
 .footer .link span {
 	margin: 0 .2rem;
 }
-.line{
+
+.line {
 	height: 1px;
 	width: 100%;
 	background: #e6e6e6;
+}
+
+.input-group {
+	padding: .3rem;
+}
+
+.input-group .input-txt .title {
+	display: block;
+	color: #333;
+	font-size: .26rem;
+	line-height: .6rem;
+}
+
+.input-group .input-txt input[type=text],
+.input-group .input-txt select,
+.input-group .input-txt textarea {
+	display: block;
+	width: 100%;
+	line-height: .6rem;
+	border: 1px solid #dedede;
+	text-indent: .2rem;
+	background: none;
+	border-radius: .08rem;
+}
+
+.input-group .input-txt select {
+	height: .62rem;
+}
+
+.input-group .input-txt .radboxlabel {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: .4rem;
+	width: 1.4rem;
+}
+
+.input-group .input-txt .radiobox {
+	position: relative;
+	height: 12px;
+	width: 12px;
+	display: inline-block;
+	margin-right: .1rem;
+}
+
+.input-group .input-txt .radiobox .icon {
+	display: block;
+	height: 12px;
+	width: 12px;
+	border-radius: 100%;
+	background: #ebebeb;
+	position: relative;
+}
+
+.input-group .input-txt .radiobox input {
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.input-group .input-txt .radiobox input:checked+.icon:after {
+	content: '';
+	display: block;
+	height: 6px;
+	width: 6px;
+	border-radius: 100%;
+	background: #b3b3b3;
+	top: 3px;
+	left: 3px;
+	position: absolute;
+}
+
+.input-group .input-txt .timetitle {
+	background: url(../img/rili.png) right center no-repeat;
+	background-size: .28rem auto;
+}
+
+.input-group .sendCode {
+	color: #999;
+	font-size: .22rem;
+}
+
+.saveBtn {
+	display: block;
+	color: #fff;
+	background: #0c9ec8;
+	border-radius: .1rem;
+	line-height: .56rem;
+	text-align: center;
 }
