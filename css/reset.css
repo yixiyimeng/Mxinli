@@ -676,7 +676,15 @@ html {
 
 	display: block;
 }
-
+.header.subheader .title{
+	text-align: center;
+	font-size: .32rem;
+	color: #333;
+	position: absolute;
+	left: .3rem;
+	right: .3rem;
+	line-height: .64rem;
+}
 .menubox {
 	position: fixed;
 	right: 0;
